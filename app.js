@@ -15,7 +15,7 @@
 
 //ex-3
 
-const button = document.querySelector('.btn').addEventListener("click",(e) => {
+const button = document.querySelector('.btn').addEventListener("click",() => {
     console.log("clicked")
 })
 
