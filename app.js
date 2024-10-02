@@ -15,9 +15,20 @@
 
 //ex-3
 
-const button = document.querySelector('.btn').addEventListener("click",() => {
-    console.log("clicked")
-})
+const button = document.querySelector('.btn').addEventListener('click',clickhandler)
+
+
+//ex-4
+const textarea = document.querySelector('#write')
+
+function clickhandler(){
+    console.log('clicked')
+    console.log("input:",textarea.value)
+}
+
+
+
+
 
 
 
