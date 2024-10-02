@@ -1,0 +1,188 @@
+<!--
+1.Click event
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Click Event Example</title>
+</head>
+<body>
+
+<button id="clickBtn">Click Me</button>
+
+<script>
+    document.getElementById("clickBtn").addEventListener("click", function() {
+        alert("Button was clicked!");
+    });
+</script>
+
+</body>
+</html>
+
+
+2.Mouseover
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mouseover Event Example</title>
+</head>
+<body>
+
+<div id="hoverDiv" style="width: 200px; height: 100px; background-color: lightblue;">Hover over me!</div>
+
+<script>
+    document.getElementById("hoverDiv").addEventListener("mouseover", function() {
+        alert("Mouse hovered over the div!");
+    });
+</script>
+
+</body>
+</html>
+
+
+3.Keydown event
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keydown Event Example</title>
+</head>
+<body>
+
+<input type="text" id="inputField" placeholder="Press any key">
+
+<script>
+    document.getElementById("inputField").addEventListener("keydown", function(event) {
+        alert("You pressed: " + event.key);
+    });
+</script>
+
+</body>
+</html>
+
+4.submit event
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Submit Event Example</title>
+</head>
+<body>
+
+<form id="myForm">
+    <input type="text" placeholder="Your name">
+    <button type="submit">Submit</button>
+</form>
+
+<script>
+    document.getElementById("myForm").addEventListener("submit", function(event) {
+        event.preventDefault();
+        alert("Form submitted!");
+    });
+</script>
+
+</body>
+</html>
+
+
+5.Change event
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Change Event Example</title>
+</head>
+<body>
+
+<select id="mySelect">
+    <option value="apple">Apple</option>
+    <option value="banana">Banana</option>
+    <option value="cherry">Cherry</option>
+</select>
+
+<script>
+    document.getElementById("mySelect").addEventListener("change", function() {
+        alert("You selected: " + this.value);
+    });
+</script>
+
+</body>
+</html>
+
+6. Load event
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Load Event Example</title>
+</head>
+<body>
+
+<script>
+    window.addEventListener("load", function() {
+        alert("Page fully loaded!");
+    });
+</script>
+
+</body>
+</html>
+
+7. Focus event
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Focus Event Example</title>
+</head>
+<body>
+
+<input type="text" id="focusInput" placeholder="Click to focus">
+
+<script>
+    document.getElementById("focusInput").addEventListener("focus", function() {
+        alert("Input field is focused!");
+    });
+</script>
+
+</body>
+</html>
+-->
+
+8. Resize event
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resize Event Example</title>
+</head>
+<body>
+
+<script>
+    window.addEventListener("resize", function() {
+        alert("Window resized!");
+    });
+</script>
+
+</body>
+</html>
+
+
+
+
