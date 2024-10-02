@@ -19,7 +19,7 @@ const button = document.querySelector('.btn').addEventListener('click',clickhand
 
 
 //ex-4
-const textarea = document.querySelector('#write')
+const textarea = document.querySelector('textarea[name = "translator"]')
 
 function clickhandler(){
     console.log('clicked')
