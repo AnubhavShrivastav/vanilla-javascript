@@ -9,10 +9,24 @@ function translationURL(text){
     return serverURL + "?" + "text=" + text 
 }
 
+function errorHandler(error){
+    console.log("error occured" , error);
+    alert("someting went wrong with server! try again after some time")
+}
+
 function clickhandler(){
-    // console.log('clicked')
-    // console.log("input:",textarea.value)
-    outputText.innerText = "hi! " + txtInput.value;
+
+    let inputText = txtInput.value; //taking input
+
+    //calling  server for processing
+    fetch(translationURL(inputText))
+    .then(response => response.json())
+    .then(json => {
+        let translationText = json.contents.translated;
+        outputText.innerText = translationText; //output
+    })
+    .catch(errorHandler)
+
 }
 
 
